@@ -1,0 +1,8 @@
+torch
+tqdm
+tensorboard
+ml-collections
+numpy
+matplotlib
+simplet5
+tensorflow
