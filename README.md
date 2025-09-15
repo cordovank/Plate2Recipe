@@ -17,18 +17,6 @@
 ![Pipeline](docs/P2R_pipeline.png)
 *A food image flows through ViT for ingredient recognition, then into GPT-2/LSTM for recipe generation to produce a structured output.*
 
-```mermaid
-flowchart LR
-  A[Food Image (.jpg/.png)] --> B[Preprocess<br/>resize/normalize/augment]
-  B --> C[ViT<br/>multi-label ingredient prediction]
-  C --> D[Postprocess<br/>top-K filter & synonym map]
-  D --> E[Prompt Builder<br/>title/ingredient prompt]
-  E --> F{Generator}
-  F -->|GPT-2 (fine-tuned on RecipeNLG)| G[Decode<br/>beam search / top-k]
-  F -->|LSTM baseline| G
-  G --> H[Structured Recipe<br/>title • ingredients • steps]
-```
-
 <details> <summary>ASCII fallback</summary> Image → Preprocess → ViT (ingredients) → Top-K/Synonyms → Prompt → {GPT-2 | LSTM} → Decode → Recipe (title, ingredients, steps) </details>
 
  
