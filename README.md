@@ -1,3 +1,6 @@
+[![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg)](#license)
+[![No AI Training](https://img.shields.io/badge/AI%20Training-Not%20Permitted-red.svg)](#license)
+
 # Plate2Recipe 
 ### *From Food Images to Structured Recipes*
 > End-to-end multimodal system that takes a food image and generates a structured recipe (ingredients + steps) by combining computer vision (ViT) and language generation (GPT-2/LSTMs).
@@ -71,8 +74,13 @@ conda env create -f environment.yml
 conda activate p2r
 ```
 
+
 ## Contributors:
 - Nellie Cordova
 - Martha Dennise Vieyra Enriquez
 - Eric Connelly
 - Denis Koshelev
+
+## License
+**All Rights Reserved.** No use, copying, modification, distribution, or model training is permitted without prior written permission.  
+See the [LICENSE](./LICENSE) file for details.
