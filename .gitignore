@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Large local artifacts (multi-GB; regenerate locally, never push)
+data/*.pickle
+data/recipes/*.pickle
+models/*.pt
